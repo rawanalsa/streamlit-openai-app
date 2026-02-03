@@ -1,5 +1,4 @@
 import os
-from urllib import response 
 import pdfplumber
 from openai import OpenAI
 
