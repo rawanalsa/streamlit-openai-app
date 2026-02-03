@@ -1,11 +1,11 @@
 import os 
 import streamlit as st 
-from dotenv import load_dotenv
+
 
 from utils import extract_pdf_text, summarize_text, question_about_text
 
 #Load environment variables from .env
-load_dotenv()
+
 
 def main():
     st.title("Chat GPT AI - PDF Chatbot")
