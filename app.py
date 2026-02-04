@@ -1,6 +1,6 @@
 import os 
 import streamlit as st 
-
+from PIL import Image
 
 from utils import extract_pdf_text, summarize_text, question_about_text
 
@@ -9,6 +9,9 @@ from utils import extract_pdf_text, summarize_text, question_about_text
 
 def main():
     st.title("Chat GPT AI - PDF Chatbot")
+    #adding the picture
+    image = Image.open('chatgpt_image.png')
+    st.image(image, use_column_width='always')
 
     #creates an upload box
     uploaded_file = st.file_uploader("Upload a PDF", type="pdf")
